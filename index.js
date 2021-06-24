@@ -5,10 +5,10 @@ const suma = (ns) => {
   for (i = 0; i < ns.length; i++) {
     acumulado += ns[i];
   }
-
+  ayuda()
   return acumulado;
 } 
-
+// Un poco de texto para eliminar
 const numeros = [1, 2, 3, 4, 5];
 
 const multiplicados = numeros.map(x => x * 2)
@@ -16,10 +16,10 @@ const multiplicados = numeros.map(x => x * 2)
 const parejas = numeros.map(x => [x, x])
 
 const mascotas = [
-  { nombre: 'Puchini', edad: 12, tipo: 'perro' },
-  { nombre: 'Chanchito feliz', edad: 3, tipo: 'perro' },
-  { nombre: 'Pulga', edad: 10, tipo: 'perro' },
-  { nombre: 'Pelusa', edad: 12, tipo: 'gato' },
+  { nombre: 'Chanchito feliz', age: 3, tipo: 'perro' },
+  { nombre: 'Pelusa', edad: 12, type: 'gato' },
+  { nombre: 'Pulga', edad: 10, type: 'perro' },
+  { nombre: 'Puchini', edad: 12, type: 'gato' },
 ]
 // edad promedio
 const edades = mascotas.map(x => x.edad)
